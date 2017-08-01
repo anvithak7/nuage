@@ -35,8 +35,8 @@ word-spacing: 100px;
   text-decoration: none;
 }
 
-#buttons:hover{
-  background-color: white;
+.button:hover{
+  background-color: #dbf2ff;
 }
 
 .button {
