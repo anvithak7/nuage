@@ -10,7 +10,7 @@
   top: 0px;
   left: 0;
   height: 50px;
-  background: #d2cccc;
+  background: transparent;
   text-align: right;
 }
 
@@ -45,7 +45,7 @@ word-spacing: 100px;
   margin-top: 10px;
   maring-right: 10px;
   font-family: quarca;
-  color: white;
+  color: black;
   font-size: 35px;
 }
 
