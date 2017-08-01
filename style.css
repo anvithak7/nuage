@@ -53,3 +53,9 @@ word-spacing: 100px;
   position: fixed;
   float: left;
 }
+
+.logo img {
+  margin-bottom: -5px;
+  height: 50px;
+  width: 50px;
+}
