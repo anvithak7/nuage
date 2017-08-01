@@ -10,7 +10,7 @@
   top: 0px;
   left: 0;
   height: 50px;
-  background: #f4f0f0;
+  background: #d2cccc;
   text-align: right;
 }
 
@@ -36,7 +36,7 @@ word-spacing: 100px;
 }
 
 .button:hover{
-  background-color: #dbf2ff;
+  background-color: #eaeaea;
 }
 
 .button {
