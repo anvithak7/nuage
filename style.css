@@ -1,3 +1,9 @@
+  
+@font-face{
+  font-family: lombok;
+  src: url('Lombok.otf');
+}
+
 #header {
   position: fixed;
   width: 100%;
@@ -21,7 +27,7 @@ padding-bottom: 3px;
 font-size: 20px;
 text-transform: uppercase;
 text-align: center;
-font-family: oswaldesque;
+font-family: lombok;
 top: 10px;
 }
 
@@ -30,4 +36,5 @@ top: 10px;
   display: inline-block;
   margin-top: 10px;
   maring-right: 10px;
+  font-family: lombok;
 }
