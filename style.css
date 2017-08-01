@@ -19,7 +19,6 @@ font-weight: bold;
 position: relative;
 display: inline-block;
 margin-right: 4px;
-background: #fefefe;
 color: #d9e5f7;
 padding: 8px;
 padding-top: 3px;
@@ -42,5 +41,5 @@ top: 10px;
   maring-right: 10px;
   font-family: metria;
   color: white;
-  font-size: 30px;
+  font-size: 5px;
 }
