@@ -82,6 +82,29 @@
 		function setResponse(val) {
 			$("#response").text(val);
 		}
+		
+		function send() {
+			var text = $("#input").val();
+			$.ajax({
+				type: "POST",
+				url: baseUrl + "query?v=20150910",
+				contentType: "application/json; charset=utf-8",
+				dataType: "json",
+				headers: {
+					"Authorization": "Bearer " + accessToken
+				},
+				data: JSON.stringify({ query: text, lang: "en", sessionId: "somerandomthing" }),
+				success: function(data) {
+					var respText = data.result.fulfillment.speech;
+					console.log("Respuesta: " + respText);
+					setResponse(respText);
+				},
+				error: function() {
+					setResponse("Internal Server Error");
+				}
+			});
+			setResponse("Thinking...");
+		}
 	</script>
 	<style type="text/css">
 		body { width: 500px; margin: 0 auto; text-align: center; margin-top: 20px; }
