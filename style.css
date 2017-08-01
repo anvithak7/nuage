@@ -27,7 +27,7 @@ font-size: 20px;
 text-transform: uppercase;
 text-align: center;
 font-family: metria;
-top: 10px;
+top: 5px;
 }
 
 #buttons a {
@@ -41,5 +41,5 @@ top: 10px;
   maring-right: 10px;
   font-family: metria;
   color: white;
-  font-size: 5px;
+  font-size: 30px;
 }
