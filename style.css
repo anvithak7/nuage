@@ -48,3 +48,8 @@ word-spacing: 100px;
   color: white;
   font-size: 35px;
 }
+
+#logo {
+  position: fixed;
+  float: left;
+}
