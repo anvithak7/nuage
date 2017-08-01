@@ -1,7 +1,7 @@
   
 @font-face{
-  font-family: metria;
-  src: url('Metria.ttf');
+  font-family: quarca;
+  src: url('QuarcaCondLight.otf');
 }
 
 #header {
@@ -26,7 +26,7 @@ padding-bottom: 3px;
 font-size: 20px;
 text-transform: uppercase;
 text-align: center;
-font-family: metria;
+font-family: quarca;
 top: 1px;
 word-spacing: 100px;
 }
@@ -44,7 +44,7 @@ word-spacing: 100px;
   display: inline-block;
   margin-top: 10px;
   maring-right: 10px;
-  font-family: metria;
+  font-family: quarca;
   color: white;
   font-size: 35px;
 }
