@@ -1,7 +1,7 @@
   
 @font-face{
-  font-family: lombok;
-  src: url('Lombok.otf');
+  font-family: metria;
+  src: url('Metria.ttf');
 }
 
 #header {
@@ -27,7 +27,7 @@ padding-bottom: 3px;
 font-size: 20px;
 text-transform: uppercase;
 text-align: center;
-font-family: lombok;
+font-family: metria;
 top: 10px;
 }
 
@@ -36,5 +36,5 @@ top: 10px;
   display: inline-block;
   margin-top: 10px;
   maring-right: 10px;
-  font-family: lombok;
+  font-family: metria;
 }
