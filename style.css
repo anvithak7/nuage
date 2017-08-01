@@ -35,6 +35,10 @@ word-spacing: 100px;
   text-decoration: none;
 }
 
+#buttons:hover{
+  background-color: white;
+}
+
 .button {
   position: relative;
   display: inline-block;
