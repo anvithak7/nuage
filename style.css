@@ -31,12 +31,16 @@ font-family: metria;
 top: 10px;
 }
 
+#buttons a {
+  text-decoration: none;
+}
+
 .button {
   position: relative;
   display: inline-block;
   margin-top: 10px;
   maring-right: 10px;
   font-family: metria;
-  color: white
+  color: white;
   font-size: 30px;
 }
