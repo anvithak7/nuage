@@ -28,6 +28,7 @@ text-transform: uppercase;
 text-align: center;
 font-family: metria;
 top: 5px;
+word-spacing: 100px;
 }
 
 #buttons a {
@@ -41,5 +42,5 @@ top: 5px;
   maring-right: 10px;
   font-family: metria;
   color: white;
-  font-size: 30px;
+  font-size: 35px;
 }
