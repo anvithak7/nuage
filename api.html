@@ -4,8 +4,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script type="text/javascript">
-		var accessToken = "f0b987ca458a45c4a23e316a1470fa2a";
-		var baseUrl = "https://api.api.ai/api/";
+		var accessToken = "27999e152ad84f9aa2f4e11931459940";
+		var baseUrl = "https://api.api.ai/v1/";
 		$(document).ready(function() {
 			$("#input").keypress(function(event) {
 				if (event.which == 13) {
@@ -63,7 +63,7 @@
 			var text = $("#input").val();
 			$.ajax({
 				type: "POST",
-				url: "https://api.api.ai/api/" + "query?v=20150910",
+				url: baseUrl + "query?v=20150910",
 				contentType: "application/json; charset=utf-8",
 				dataType: "json",
 				headers: {
@@ -77,44 +77,10 @@
 					setResponse("Internal Server Error");
 				}
 			});
-			setResponse
-			//if (val.result) {
-              //  var say=""; 
-              //  say = val.result.fulfillment.speech;
-                
-              //  synth = window.speechSynthesis;
-              //  var utterThis = new SpeechSynthesisUtterance(say);
-              //  utterThis.lang = "en-US";
-              //  synth.speak(utterThis);
-          //  }
-			("Loading...");
+			setResponse("Loading...");
 		}
 		function setResponse(val) {
 			$("#response").text(val);
-		}
-		
-		function send() {
-			var text = $("#input").val();
-			$.ajax({
-				type: "POST",
-				url: baseUrl + "query?v=20150910",
-				contentType: "application/json; charset=utf-8",
-				dataType: "json",
-				headers: {
-					"Authorization": "Bearer " + accessToken
-					
-				},
-				data: JSON.stringify({ query: text, lang: "en", sessionId: "somerandomthing" }),
-				success: function(data) {
-					var respText = data.result.fulfillment.speech;
-					console.log("Respuesta: " + respText);
-					setResponse(respText);
-				},
-				error: function() {
-					setResponse("Internal Server Error");
-				}
-			});
-			setResponse("Thinking...");
 		}
 	</script>
 	<style type="text/css">
