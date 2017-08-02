@@ -77,7 +77,16 @@
 					setResponse("Internal Server Error");
 				}
 			});
-			setResponse("Loading...");
+			setResponse
+			if (val.result) {
+                var say=""; 
+                say = val.result.fulfillment.speech;
+                
+                synth = window.speechSynthesis;
+                var utterThis = new SpeechSynthesisUtterance(say);
+                //utterThis.lang = "en-US";
+                synth.speak(utterThis);
+            }("Loading...");
 		}
 		function setResponse(val) {
 			$("#response").text(val);
