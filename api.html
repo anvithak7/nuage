@@ -83,6 +83,14 @@
 			$("#response").text(val);
 		}
 		
+		function ClearFields() {
+
+     document.getElementById("textfield1").value = "";
+     document.getElementById("textfield2").value = "";
+}
+		
+		
+		
 		function chatResponse(data) {
 			$("#response").text(data.result.fulfillment.speech);
 		}
@@ -97,7 +105,7 @@
 </head>
 <body>
 	<div>
-		<input id="input" type="text"> <button id="rec">Speak</button>
+		<input id="input" type="text" onclick="ClearFields()> <button id="rec">Speak</button>
 		<br>I.V.I.<br> <p id="response"></p>
 	</div>
 </body>
