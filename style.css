@@ -64,6 +64,10 @@ word-spacing: 100px;
     cursor: pointer;
 }
 
+.button:hover {
+  background-color: #dddedf;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
