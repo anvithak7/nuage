@@ -98,3 +98,7 @@ word-spacing: 100px;
 .dropdown:hover .button {
     background-color: #dddedf;
 }
+
+.profile {
+  display: inline;
+}
