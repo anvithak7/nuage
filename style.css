@@ -60,6 +60,15 @@ word-spacing: 100px;
   margin-top: 12px;
 }
 
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -82,3 +91,11 @@ word-spacing: 100px;
 }
 
 .dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .button {
+    background-color: #3e8e41;
+}
