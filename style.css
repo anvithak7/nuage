@@ -41,7 +41,7 @@ word-spacing: 100px;
   maring-right: 10px;
   font-family: quarca;
   color: #a1c0d6;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .logo {
@@ -59,7 +59,7 @@ word-spacing: 100px;
     background-color: transparent;
     color: #a1c0d6;
     padding: 16px;
-    font-size: 20px;
+    font-size: 25px;
     border: none;
     cursor: pointer;
 }
