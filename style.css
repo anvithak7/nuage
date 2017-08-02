@@ -4,6 +4,11 @@
   src: url('QuarcaCondLight.otf');
 }
 
+@font-face{
+  font-family: oswaldesque;
+  src: url('oswaldesque_light.ttf');
+}
+
 #header {
   position: fixed;
   width: 100%;
