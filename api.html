@@ -71,16 +71,20 @@
 				},
 				data: JSON.stringify({ query: text, lang: "en", sessionId: "somerandomthing" }),
 				success: function(data) {
-					setResponse(JSON.stringify(data, undefined, 2));
+					chatResponse(JSON.stringify(data, undefined, 2));
 				},
 				error: function() {
 					setResponse("Internal Server Error");
 				}
 			});
-			setResponse("Loading...");
+			setResponse("...");
 		}
 		function setResponse(val) {
 			$("#response").text(val);
+		}
+		
+		function chatResponse(data) {
+			$("#response").text(data.result.fulfillment.messages.speech);
 		}
 	</script>
 	<style type="text/css">
