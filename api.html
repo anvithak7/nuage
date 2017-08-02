@@ -1,3 +1,6 @@
+<h1 style="font-size: 30">
+	<b>I am I.V.I.</b>
+</h1>
 <html>
 <head>
 	<title>API Example</title>
@@ -37,7 +40,7 @@
 			recognition.lang = "en-US";
 			recognition.start();
 		}
-	
+
 		function stopRecognition() {
 			if (recognition) {
 				recognition.stop();
@@ -76,21 +79,15 @@
 				error: function() {
 					setResponse("Internal Server Error");
 				}
-				 document.getElementById("input").value = "";
+
 			});
 			setResponse("...");
 		}
 		function setResponse(val) {
 			$("#response").text(val);
 		}
-		
-		function ClearFields() {
-		     document.getElementById("textfield1").value = "";
-		     document.getElementById("textfield2").value = "";
-		}
-		
-		
-		
+
+
 		function chatResponse(data) {
 			$("#response").text(data.result.fulfillment.speech);
 		}
@@ -104,9 +101,10 @@
 	</style>
 </head>
 <body>
-	<div> <button id="rec">Speak</button>
+	<div>
 		<input id="input" type="text" >
-		<br>I.V.I.<br> <p id="response"></p>
+		<button id="rec">Speak</button>
+		<br><br> <p id="response"></p>
 	</div>
 </body>
 </html>
