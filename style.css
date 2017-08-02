@@ -99,6 +99,30 @@ word-spacing: 100px;
     background-color: #dddedf;
 }
 
-.profile {
-  display: inline;
+#divya {
+  float: right;
+  margin: 0px 0px 15px 15px;
+  margin-top: 150px;
+  margin-right: 40px;
+}
+
+#anvitha {
+  float: right;
+  margin: 0px 0px 15px 15px;
+  margin-top: 150px;
+  margin-right: 80px;
+}
+
+#sam{
+  float:right;
+  margin: 0px 0px 15px 15px;
+  margin-top: 150px;
+  margin-right: 120px;
+}
+
+#jill {
+  float: right;
+  margin: 0px 0px 15px 15px;
+  margin-top: 150px;
+  margin-right: 160px;
 }
