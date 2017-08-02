@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script type="text/javascript">
-		var accessToken = "47d42006fcb8496d9afbf8d65c375fb6";//"f0b987ca458a45c4a23e316a1470fa2a";
+		var accessToken = "f0b987ca458a45c4a23e316a1470fa2a";
 		var baseUrl = "https://api.api.ai/api/";
 		$(document).ready(function() {
 			$("#input").keypress(function(event) {
@@ -63,11 +63,11 @@
 			var text = $("#input").val();
 			$.ajax({
 				type: "POST",
-				url: baseUrl + "query?v=20150910",
+				url: "https://api.api.ai/api/" + "query?v=20150910",
 				contentType: "application/json; charset=utf-8",
 				dataType: "json",
 				headers: {
-					"Authorization": "Bearer " + accessToken
+					"Authorization": "Bearer " + f0b987ca458a45c4a23e316a1470fa2a //accessToken
 				},
 				data: JSON.stringify({ query: text, lang: "en", sessionId: "somerandomthing" }),
 				success: function(data) {
@@ -101,7 +101,7 @@
 				contentType: "application/json; charset=utf-8",
 				dataType: "json",
 				headers: {
-					"Authorization": "Bearer " + accessToken
+					"Authorization": "Bearer " + f0b987ca458a45c4a23e316a1470fa2a //accessToken
 					
 				},
 				data: JSON.stringify({ query: text, lang: "en", sessionId: "somerandomthing" }),
