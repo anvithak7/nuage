@@ -1,4 +1,4 @@
-  
+
 @font-face{
   font-family: quarca;
   src: url('QuarcaCondLight.otf');
@@ -129,30 +129,5 @@ word-spacing: 100px;
   float: right;
   margin: 0px 0px 15px 15px;
   margin-top: 150px;
-  margin-right: 160px;
-}
-
-
-.boxed-div{
-  border: 1px solid green;
-  margin-top: 190px;
-  margin-right: 40px;
-}
-
-.boxed-an {
-  border: 1px solid green;
-  margin-top: 190px;
-  margin-right: 80px;
-}
-
-.boxed-sam {
-  border: 1px solid green;
-  margin-top: 190px;
-  margin-right: 120px;
-}
-
-.boxed-jill {
-  border: 1px solid green;
-  margin-top: 190px;
   margin-right: 160px;
 }
