@@ -71,7 +71,7 @@
 				},
 				data: JSON.stringify({ query: text, lang: "en", sessionId: "somerandomthing" }),
 				success: function(data) {
-					chatResponse(JSON.stringify(data, undefined, 2));
+					chatResponse(data, undefined, 2);
 				},
 				error: function() {
 					setResponse("Internal Server Error");
