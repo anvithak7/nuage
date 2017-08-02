@@ -35,10 +35,6 @@ word-spacing: 100px;
   text-decoration: none;
 }
 
-.button:hover{
-  background-color: #ccd1d8
-}
-
 .button {
   position: relative;
   display: inline-block;
@@ -61,10 +57,10 @@ word-spacing: 100px;
 }
 
 .button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: transparent;
+    color: #a1c0d6;
     padding: 16px;
-    font-size: 16px;
+    font-size: 35px;
     border: none;
     cursor: pointer;
 }
