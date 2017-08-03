@@ -223,71 +223,37 @@ word-spacing: 100px;
     100% { opacity: 0; }
 }
 
-label {
-    display:block;
-    margin-top:20px;
-    letter-spacing:2px;
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #dddedf; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    font-family: oswaldesque;
 }
 
-/* Centre the page */
-.body {
-    display:block;
-    margin:0 auto;
-    width:576px;
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #a1c0d6;
+    color: white;
+    font-family: oswaldesque;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-/* Centre the form within the page */
-form {
-    margin:0 auto;
-    width:459px;
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #acc9e6;
 }
 
-/* Style the text boxes */
-input, textarea {
-	width:439px;
-	height:27px;
-	background:#efefef;
-	border:1px solid #dedede;
-	padding:10px;
-	margin-top:3px;
-	font-size:0.9em;
-	color:#3a3a3a;
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
-
-textarea {
-	height:213px;
-}
-
-input, textarea {
-    width:439px;
-    height:27px;
-    background:#efefef;
-    border:1px solid #dedede;
-    padding:10px;
-    margin-top:3px;
-    font-size:0.9em;
-    color:#3a3a3a;
-    -moz-border-radius:5px;
-    -webkit-border-radius:5px;
-    border-radius:5px;
-}
-
-input:focus, textarea:focus {
-    border:1px solid #97d6eb;
-}
-
-#submit {
-    width:127px;
-    height:38px;
-    background:url(images/submit.jpg);
-    text-indent:-9999px;
-    border:none;
-    margin-top:20px;
-    cursor:pointer;
-}
-
-	#submit:hover {
-	    opacity:.9;
-	}
-
-  
