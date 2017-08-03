@@ -121,11 +121,12 @@ word-spacing: 100px;
 .divya {
    text-align: justify;
    width: 210px;
+   float: right;
+   margin-right: 40px;
 
 }
 .divya img {
    display: block;
-   margin: 0 auto;
    float: right;
    margin: 0px 0px 15px 15px;
    margin-top: 150px;
