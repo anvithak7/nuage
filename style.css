@@ -13,6 +13,7 @@ p {
   font-family:oswaldesque;
 }
 
+
 a:link {
   text-decoration: none;
   color: black;
@@ -139,7 +140,6 @@ word-spacing: 100px;
    float: right;
    margin-right: 40px;
    font-weight: bold;
-
 }
 .divya img {
    display: block;
