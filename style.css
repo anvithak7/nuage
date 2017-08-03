@@ -6,9 +6,8 @@
 
 @font-face {
   font-family: oswaldesque;
-  src: url('oswaldesqeue_light.ttf')
+  src: url('oswaldesque_light.ttf')
 }
-
 
 p {
   font-family:oswaldesque;
