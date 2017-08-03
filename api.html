@@ -64,6 +64,7 @@
 		}
 		function send() {
 			var text = $("#input").val();
+			inputResponse(text);
 			$.ajax({
 				type: "POST",
 				url: baseUrl + "query?v=20150910",
@@ -87,7 +88,9 @@
 			$("#loading").text(val);
 		}
 
-
+		function inputResponse(input) {
+			$("#response").append("<p>" + input + "</p>");
+		}
 		function chatResponse(data) {
 			setResponse("");
 			$("#response").append("<p>" + data.result.fulfillment.speech + "</p>");
@@ -120,6 +123,26 @@
 				margin-top: -5px;
 				margin-left: -10px;
 }
+		.speech-bubble-input {
+			position: relative;
+			background: #a1c0d6;
+			border-radius: .6em;
+}
+
+			.speech-bubble-input:after {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 50%;
+				width: 0;
+				height: 0;
+				border: 10px solid transparent;
+				border-right-color: #a1c0d6;
+				border-left: 0;
+				border-bottom: 0;
+				margin-top: -5px;
+				margin-left: -10px;
+}
 		.triangle-isosceles {
  			position:relative;
   			padding:15px;
@@ -142,6 +165,7 @@
 	<div>
 		<br><br> <p id="response" class="speech-bubble-response"></p> 
 		<p id="loading"></p>
+		<br><br> <p id="userinput" class="speech-bubble-input"></p>
 	</div>
 	
 	<div>
