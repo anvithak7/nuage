@@ -4,13 +4,14 @@
   src: url('QuarcaCondLight.otf');
 }
 
-@font-face{
-  font-family: oswaldesque;
-  src: url('oswaldesque_light.ttf');
+@font-face {
+  font-family: ubuntu;
+  src: url('ubuntu.ttf')
 }
 
+
 p {
-  font-family: oswaldesque;
+  font-family: ubuntu;
 }
 
 #footer {
