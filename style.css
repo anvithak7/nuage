@@ -134,6 +134,10 @@ word-spacing: 100px;
     background-color: #dddedf;
 }
 
+h1 {
+  font-family: oswaldesque;
+}
+
 .divya {
    text-align: justify;
    width: 210px;
