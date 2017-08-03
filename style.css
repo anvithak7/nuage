@@ -133,13 +133,20 @@ word-spacing: 100px;
    margin-right: 40px;
 }
 
-#anvitha {
+.anvitha {
+  text-align: justify;
+  width: 200px;
+  float: right;
+  margin-right: 90px;
+}
+
+.anvitha img {
+  display: block;
   float: right;
   margin: 0px 0px 15px 15px;
   margin-top: 150px;
-  margin-right: 80px;
+  margin-right: 90px;
 }
-
 #sam{
   float:right;
   margin: 0px 0px 15px 15px;
