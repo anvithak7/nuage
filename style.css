@@ -5,13 +5,13 @@
 }
 
 @font-face {
-  font-family: ubuntu;
-  src: url('ubuntu.ttf')
+  font-family: oswaldesque;
+  src: url('oswaldesqeue_light.ttf')
 }
 
 
 p {
-  font-family: ubuntu;
+  font-family:oswaldesque;
 }
 
 #footer {
@@ -124,6 +124,7 @@ word-spacing: 100px;
    width: 210px;
    float: right;
    margin-right: 40px;
+   font-weight: bold;
 
 }
 .divya img {
@@ -139,6 +140,7 @@ word-spacing: 100px;
   width: 200px;
   float: right;
   margin-right: 180px;
+  font-weight: bold;
 }
 
 .anvitha img {
@@ -153,6 +155,7 @@ word-spacing: 100px;
   width: 200px;
   float:right;
   margin-right: 110px;
+  font-weight: bold;
 }
 
 .sam img{
@@ -167,6 +170,7 @@ word-spacing: 100px;
   float: left;
   width: 200px;
   margin-left: 80px;
+  font-weight: bold;
 }
 
 .jill img {
