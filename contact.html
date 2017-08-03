@@ -31,20 +31,32 @@
    </div>
   </div>
 
+<div class="container">
+  <form action="/action_page.php">
 
-  <div class="email" style = "padding-left: 15px; padding-right: 15px">
-    <br><br><br>
-    <center><h1 style = "font-size: 40px; font-family: quarca">Contact:</h1></center>
-    <p style = "font-size: 25px; font-family: oswaldesque"><b>Contact NUAGE creators at: </b></p>
-    <p style = "font-size: 40px; font-family: oswaldesque; color: blue"><b>ivi.nuage@gmail.com </b></p>
-    <br>
-    <p style = "font-size: 25px; font-family: oswaldesque"><b>We are looking for feedback and any comments that our users
-      have for the NUAGE website or I.V.I. (the chatbot).</b></p>
-  </div>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-  <br><br><br>
-   <center><img src = "https://anvithak7.github.io/nuage/logo.png" style = "width:245px; height:100px">
-   </center>
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">United Kingdom</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="india">India</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
+
 
   </body>
   </html>
