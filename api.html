@@ -89,11 +89,11 @@
 		}
 
 		function inputResponse(input) {
-			$("#response").append("<p>" + input + "</p>");
+			$("#response").append("<p class='speech-bubble-input'>" + input + "</p>");
 		}
 		function chatResponse(data) {
 			setResponse("");
-			$("#response").append("<p>" + data.result.fulfillment.speech + "</p>");
+			$("#response").append("<p class='speech-bubble-response'>" + data.result.fulfillment.speech + "</p>");
 		}
 	</script>
 	<style type="text/css">
@@ -162,12 +162,9 @@
 	</style>
 </head>
 <body>
-	<div>
-		<br><br> <p id="response" class="speech-bubble-response"></p> 
-		<p id="loading"></p>
-		<br><br> <p id="userinput" class="speech-bubble-input"></p>
+	<div id="response">
 	</div>
-	
+	<p id="loading"></p>
 	<div>
 		<input id="input" type="text" >
 		<button id="rec">Speak</button>
