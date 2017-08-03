@@ -97,7 +97,7 @@
 		}
 	</script>
 	<style type="text/css">
-		body { width: 500px; margin: 0 auto; text-align: center; margin-top: 20px; }
+		body { width: 500px; margin: 0 auto; margin-top: 20px; }
 		input { width: 400px; }
 		button { width: 50px; }
 		textarea { width: 100%; }
@@ -106,7 +106,10 @@
 			position: relative;
 			background: #d8d9da;
 			border-radius: .6em;
+			text-align: left;
+			padding-left: 10px;
 }
+		
 
 			.speech-bubble-response:after {
 				content: '';
@@ -115,32 +118,34 @@
 				top: 50%;
 				width: 0;
 				height: 0;
-				border: 10px solid transparent;
+				border: 12px solid transparent;
 				border-right-color: #d8d9da;
 				border-left: 0;
 				border-bottom: 0;
-				margin-top: -5px;
-				margin-left: -10px;
+				margin-top: -11.5px;
+				margin-left: -23px;
 }
 		.speech-bubble-input {
 			position: relative;
 			background: #a1c0d6;
 			border-radius: .6em;
+			text-align: right;
+			padding-right: 10px;
 }
 
 			.speech-bubble-input:after {
 				content: '';
 				position: absolute;
-				left: 0;
+				right: 0;
 				top: 50%;
 				width: 0;
 				height: 0;
-				border: 10px solid transparent;
-				border-right-color: #a1c0d6;
-				border-left: 0;
+				border: 12px solid transparent;
+				border-left-color: #a1c0d6;
+				border-right: 0;
 				border-bottom: 0;
-				margin-top: -5px;
-				margin-left: -10px;
+				margin-top: -11.5px;
+				margin-right: -23px;
 }
 		.triangle-isosceles {
  			position:relative;
