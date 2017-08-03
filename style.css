@@ -137,7 +137,7 @@ word-spacing: 100px;
   text-align: justify;
   width: 200px;
   float: right;
-  margin-right: 90px;
+  margin-right: 180px;
 }
 
 .anvitha img {
@@ -145,20 +145,34 @@ word-spacing: 100px;
   float: right;
   margin: 0px 0px 15px 15px;
   margin-top: 150px;
-  margin-right: 90px;
-}
-#sam{
-  float:right;
-  margin: 0px 0px 15px 15px;
-  margin-top: 150px;
-  margin-right: 120px;
 }
 
-#jill {
+.sam{
+  text-align: justify;
+  width: 200px;
+  float:right;
+  margin-right: 110px;
+}
+
+.sam img{
+  display: block;
   float: right;
   margin: 0px 0px 15px 15px;
   margin-top: 150px;
-  margin-right: 160px;
+}
+
+.jill {
+  text-align: justify;
+  float: left;
+  width: 200px;
+  margin-left: 80px;
+}
+
+.jill img {
+  display: block;
+  float: left;
+  margin: 0px 0px 15px 15px;
+  margin-top: 150px;
 }
 
 .rw-wrapper{
