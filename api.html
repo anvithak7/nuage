@@ -1,5 +1,5 @@
 <h1 style="font-size: 30">
-	<b class="triangle-isosceles">I.V.I.</b>
+	<b class="speech-bubble">I.V.I.</b>
 </h1>
 <html>
 <head>
@@ -99,6 +99,26 @@
 		button { width: 50px; }
 		textarea { width: 100%; }
 		
+		.speech-bubble {
+			position: relative;
+			background: #d8d9da;
+			border-radius: .4em;
+}
+
+			.speech-bubble:after {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 50%;
+				width: 0;
+				height: 0;
+				border: 49px solid transparent;
+				border-right-color: #d8d9da;
+				border-left: 0;
+				border-bottom: 0;
+				margin-top: -24.5px;
+				margin-left: -49px;
+}
 		.triangle-isosceles {
  			position:relative;
   			padding:15px;
@@ -119,9 +139,12 @@
 </head>
 <body>
 	<div>
+		<br><br> <p id="response"></p>
+	</div>
+	
+	<div>
 		<input id="input" type="text" >
 		<button id="rec">Speak</button>
-		<br><br> <p id="response"></p>
 	</div>
 </body>
 </html>
