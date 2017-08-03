@@ -89,7 +89,7 @@
 
 
 		function chatResponse(data) {
-			$("#response").text(data.result.fulfillment.speech);
+			$("#response").append("<p>" + data.result.fulfillment.speech + "</p>");
 		}
 	</script>
 	<style type="text/css">
