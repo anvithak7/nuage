@@ -84,11 +84,12 @@
 			setResponse("...");
 		}
 		function setResponse(val) {
-			$("#response").text(val);
+			$("#loading").text(val);
 		}
 
 
 		function chatResponse(data) {
+			setResponse("");
 			$("#response").append("<p>" + data.result.fulfillment.speech + "</p>");
 		}
 	</script>
@@ -139,7 +140,8 @@
 </head>
 <body>
 	<div>
-		<br><br> <p id="response" class="speech-bubble-response"></p>
+		<br><br> <p id="response" class="speech-bubble-response"></p> 
+		<p id="loading"></p>
 	</div>
 	
 	<div>
