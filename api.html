@@ -109,7 +109,7 @@
 				dataType: "json",
 				headers: {
 					"Authorization": "Bearer " + accessToken
-				},
+				}
 				data: JSON.stringify({ query: text, lang: "en", sessionId: "somerandomthing" }),
 				success: function(data) {
 					chatResponse(data, undefined, 2);
