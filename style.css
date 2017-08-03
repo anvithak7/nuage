@@ -232,6 +232,7 @@ input[type=text], select, textarea {
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    font-family: oswaldesque;
 }
 
 /* Style the submit button with a specific background color etc */
