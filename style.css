@@ -9,6 +9,10 @@
   src: url('oswaldesque_light.ttf');
 }
 
+p {
+  font-family: oswaldesque;
+}
+
 #footer {
    position:fixed;
    bottom:0;
