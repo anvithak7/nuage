@@ -13,6 +13,21 @@ p {
   font-family:oswaldesque;
 }
 
+a:link {
+  text-decoration: none;
+  color: black;
+
+}
+
+a:hover{
+  text-decoration: underline
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
 #footer {
    position:fixed;
    bottom:0;
