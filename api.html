@@ -86,7 +86,7 @@
 			setResponse("...");
 
 		}
-		
+
 		function setResponse(val) {
 			$("#loading").text(val);
 		}
@@ -98,10 +98,10 @@
 			setResponse("");
 			$("#response").append("<p class='speech-bubble-response'>" + data.result.fulfillment.speech + "</p>");
 		}
-		
+
 	</script>
 	</head>
-	
+
 	<body>
 	<style type="text/css">
 		body { width: 500px; margin: 0 auto; margin-top: 20px; }
@@ -116,6 +116,7 @@
 			text-align: left;
 			padding: 10px;
 			min-height: 15px;
+			font-family: raleway;
 }
 
 
@@ -132,6 +133,8 @@
 				border-bottom: 0;
 				margin-top: 0px;
 				margin-left: -10px;
+				font-family: raleway;
+
 }
 		.speech-bubble-input {
 			position: relative;
@@ -140,6 +143,7 @@
 			text-align: right;
 			padding: 10px;
 			min-height: 15px;
+			font-family: raleway;
 }
 
 			.speech-bubble-input:after {
@@ -155,6 +159,7 @@
 				border-bottom: 0;
 				margin-top: 0;
 				margin-right: -10px;
+				font-family: raleway;
 }
 		.triangle-isosceles {
  			position:relative;
@@ -207,9 +212,9 @@
 		<p class='speech-bubble-response'>Hello! I am I.V.I.! If you ever need someone to talk to, or just vent to, I'm your person! To learn more about me, go to the "About" tab in the header above.</p>
 		<p class='speech-bubble-response'>Type in the box below to start chatting with me! (I feel ashamed to say this, but I've been told I have low intelligence, so please bear with me if I do not understand you sometimes!)</p>
 	</div>
-		
+
 	<p id="loading"></p>
-		
+
 	<div>
 		<input id="input" type="text" >
 		<button id="rec">Speak</button>
