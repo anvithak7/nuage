@@ -304,3 +304,59 @@ input[type=submit]:hover {
     background-color: #f2f2f2;
     padding: 20px;
 }
+
+.ignitehover {
+  font-size: 30px;
+  color: #ff751a;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 10px;
+}
+.ignitehover p {
+  display: none;
+  color: #ff751a;
+}
+.ignitehover:hover p {
+  background-color: rgba(255, 255, 255, 0.7);
+  display: block;
+}
+
+.voicehover {
+  font-size: 30px;
+  color: #006600;
+  cursor: pointer;
+  display: inline-block;
+ padding: 0 20px;
+}
+.voicehover p {
+  display: none;
+  color: #006600;
+}
+.voicehover:hover p {
+  background-color: rgba(255, 255, 255, 0.7);
+  display: block;
+}
+
+.inspirehover {
+  font-size: 30px;
+  color: #b300b3;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 10px;
+}
+.inspirehover p {
+  display: none;
+  color: #b300b3;
+}
+.inspirehover:hover p {
+  background-color: rgba(255, 255, 255, 0.7);
+  display: block;
+}
+
+.ivi1 {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  font-family: oswaldesque;
+  font-size: 30px;
+}

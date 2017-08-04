@@ -14,6 +14,7 @@
 				if (event.which == 13) {
 					event.preventDefault();
 					send();
+					input.value = "";
 				}
 			});
 			$("#rec").click(function(event) {
@@ -83,7 +84,9 @@
 
 			});
 			setResponse("...");
+
 		}
+		
 		function setResponse(val) {
 			$("#loading").text(val);
 		}
@@ -95,6 +98,7 @@
 			setResponse("");
 			$("#response").append("<p class='speech-bubble-response'>" + data.result.fulfillment.speech + "</p>");
 		}
+		
 	</script>
 	</head>
 	
