@@ -84,6 +84,14 @@
 			});
 			setResponse("...");
 		}
+		
+			input.keydown(function(e) {
+   			if (e.keyCode == 13) {
+        		e.preventDefault();
+        		$(this).val('');
+        		return false;
+    			}
+		}
 		function setResponse(val) {
 			$("#loading").text(val);
 		}
@@ -95,6 +103,7 @@
 			setResponse("");
 			$("#response").append("<p class='speech-bubble-response'>" + data.result.fulfillment.speech + "</p>");
 		}
+		
 	</script>
 	</head>
 	
@@ -205,9 +214,7 @@
 	<p id="loading"></p>
 		
 	<div>
-		<form>
 		<input id="input" type="text" >
-		</form>
 		<button id="rec">Speak</button>
 	</div>
 </body>
