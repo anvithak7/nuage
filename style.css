@@ -46,6 +46,10 @@ h2 {
   padding: 16px 32px;
 }
 
+@font-face {
+  font-family: raleway;
+  src: url('raleway.ttf')
+}
 @font-face{
   font-family: quarca;
   src: url('QuarcaCondLight.otf');
@@ -60,6 +64,9 @@ p {
   font-family:oswaldesque;
 }
 
+.description {
+  font-family: raleway;
+}
 
 a:link {
   text-decoration: none;
@@ -303,6 +310,7 @@ input[type=submit]:hover {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+    font-family: raleway;
 }
 
 .ignitehover {
