@@ -1,35 +1,42 @@
-
-
-.overlay {
-    position: relative;
-    width: 50%;
+.column {
+    float: left;
+    width: 200px;
+    margin-bottom: 16px;
+    padding: 0 65px;
 }
 
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
+/* Display the columns below each other instead of side by side on small screens */
+@media (max-width: 200px) {
+    .column {
+        width: 200px;
+        display: block;
+    }
 }
 
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.overlay:hover .{
-  opacity: 0.3;
+/* Some left and right padding inside the container */
+.container {
+    padding: 0 20px;
 }
 
-.overlay:hover .middle {
-  opacity: 1;
+/* Clear floats */
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+
+h2 {
+  font-family: oswaldesque;
 }
 
 .text {
@@ -178,85 +185,13 @@ h1 {
   font-family: oswaldesque;
 }
 
-.divya {
+.profile {
    text-align: justify;
-   width: 210px;
-   float: right;
-   margin-right: 40px;
+   display:inline-block;
    font-weight: bold;
 }
 
-.divya:hover .image {
-  opacity: 0.3;
-}
 
-.divya:hover .middle {
-  opacity: 1;
-}
-
-.divya .middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  margin-right: 40px;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
-}
-
-.divya img {
-   display: block;
-   float: right;
-   margin: 0px 0px 15px 15px;
-   margin-top: 150px;
-   margin-right: 40px;
-}
-
-.anvitha {
-  text-align: justify;
-  width: 200px;
-  float: right;
-  margin-right: 180px;
-  font-weight: bold;
-}
-
-.anvitha img {
-  display: block;
-  float: right;
-  margin: 0px 0px 15px 15px;
-  margin-top: 150px;
-}
-
-.sam{
-  text-align: justify;
-  width: 200px;
-  float:right;
-  margin-right: 110px;
-  font-weight: bold;
-}
-
-.sam img{
-  display: block;
-  float: right;
-  margin: 0px 0px 15px 15px;
-  margin-top: 150px;
-}
-
-.jill {
-  text-align: justify;
-  float: left;
-  width: 200px;
-  margin-left: 80px;
-  font-weight: bold;
-}
-
-.jill img {
-  display: block;
-  float: left;
-  margin: 0px 0px 15px 15px;
-  margin-top: 150px;
-}
 
 .rw-wrapper{
 	width: 80%;
