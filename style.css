@@ -290,7 +290,7 @@ input[type=text], select, textarea {
 }
 
 /* Style the submit button with a specific background color etc */
-input[type=submit] {
+.submit {
     background-color: #a1c0d6;
     color: white;
     font-family: oswaldesque;
@@ -301,7 +301,7 @@ input[type=submit] {
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
+.submit:hover {
     background-color: #acc9e6;
 }
 
